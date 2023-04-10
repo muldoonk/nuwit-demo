@@ -9,7 +9,11 @@
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-			"settings": {},
+			"settings": {
+				"eslint.workingDirectories": [
+					{"mode": "auto"}
+				]
+			},
 			"extensions": [
 				"streetsidesoftware.code-spell-checker",
 				"Vue.volar"
@@ -18,7 +22,7 @@
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [8080],
+	"forwardPorts": [8080, 8000],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "npm install"
